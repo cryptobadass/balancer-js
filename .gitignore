@@ -4,5 +4,5 @@ yarn-error.log
 .DS_Store
 .env
 .idea/
-dist/
+# dist/
 src/subgraph/generated/

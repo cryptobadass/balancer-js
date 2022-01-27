@@ -71,4 +71,12 @@ export const BALANCER_NETWORK_CONFIG: Record<Network, BalancerNetworkConfig> = {
         subgraphUrl:
             'https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-arbitrum-v2',
     },
+    [Network.FUJI]: {
+        chainId: Network.FUJI, //43113
+        vault: '0xF20D313685665bf745B720FE81b927fAFcfB18A2',
+        weth: '0xbAD9016aa18Cf22d08aefd3B86c0D36E8C222B83',
+        multicall: '0xC471AFa18cD037a9bb032bE72651Fe3Eaa466eBA',
+        subgraphUrl:
+            'http://127.0.0.1:8000/subgraphs/name/balancer-labs/balancer-fuji-v2',
+    },
 };
