@@ -77,6 +77,6 @@ export const BALANCER_NETWORK_CONFIG: Record<Network, BalancerNetworkConfig> = {
         weth: '0xbAD9016aa18Cf22d08aefd3B86c0D36E8C222B83',
         multicall: '0xC471AFa18cD037a9bb032bE72651Fe3Eaa466eBA',
         subgraphUrl:
-            'http://127.0.0.1:8000/subgraphs/name/balancer-labs/balancer-fuji-v2',
+            'https://api.thegraph.com/subgraphs/name/leedewyze/balancer-fuji-v2',
     },
 };
