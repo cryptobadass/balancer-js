@@ -79,4 +79,12 @@ export const BALANCER_NETWORK_CONFIG: Record<Network, BalancerNetworkConfig> = {
         subgraphUrl:
             'https://api.thegraph.com/subgraphs/name/leedewyze/balancer-fuji-v2',
     },
+    [Network.AVALANCHE]: {
+        chainId: Network.AVALANCHE, //43114
+        vault: 'todo vault adress here',
+        weth: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+        multicall: 'todo multicall address here',
+        subgraphUrl:
+            'https://api.thegraph.com/subgraphs/name/leedewyze/balancer-avalanche-v2',
+    }
 };

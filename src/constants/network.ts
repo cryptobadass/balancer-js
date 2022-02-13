@@ -6,5 +6,6 @@ export enum Network {
     KOVAN = 42,
     POLYGON = 137,
     ARBITRUM = 42161,
-    FUJI = 43113
+    FUJI = 43113,
+    AVALANCHE = 43114
 }
