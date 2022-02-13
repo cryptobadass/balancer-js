@@ -790,6 +790,7 @@ exports.Network = void 0;
     Network[Network["POLYGON"] = 137] = "POLYGON";
     Network[Network["ARBITRUM"] = 42161] = "ARBITRUM";
     Network[Network["FUJI"] = 43113] = "FUJI";
+    Network[Network["AVALANCHE"] = 43114] = "AVALANCHE";
 })(exports.Network || (exports.Network = {}));
 
 const balancerVault = '0xBA12222222228d8Ba445958a75a0704d566BF2C8';
@@ -862,6 +863,13 @@ const BALANCER_NETWORK_CONFIG = {
         multicall: '0xC471AFa18cD037a9bb032bE72651Fe3Eaa466eBA',
         subgraphUrl: 'https://api.thegraph.com/subgraphs/name/leedewyze/balancer-fuji-v2',
     },
+    [exports.Network.AVALANCHE]: {
+        chainId: exports.Network.AVALANCHE,
+        vault: 'todo vault adress here',
+        weth: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+        multicall: 'todo multicall address here',
+        subgraphUrl: 'https://api.thegraph.com/subgraphs/name/leedewyze/balancer-avalanche-v2',
+    }
 };
 
 /*
@@ -7948,6 +7956,8 @@ class CoingeckoTokenPriceService {
                 return 'arbitrum-one';
             case 43113:
                 return "ethereum";
+            case 43114:
+                return "avalanche"; // todo
         }
         return '2';
     }
@@ -7963,6 +7973,8 @@ class CoingeckoTokenPriceService {
                 return 'eth';
             case 43113:
                 return "eth";
+            case 43114:
+                return "avax"; // todo
         }
         return '';
     }
