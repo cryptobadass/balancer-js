@@ -1,7 +1,7 @@
 overwrite: true
 generates:
   src/subgraph/generated/balancer-subgraph-types.ts:
-    schema: http://167.114.211.113:8000/subgraphs/name/balancer-labs/balancer-fuji-v2
+    schema: https://node-us.yotei.finance/subgraphs/name/balancer-labs/balancer-avalanche-v2
     documents: 'src/subgraph/graphql/**/*.graphql'
     plugins:
       - typescript
@@ -13,6 +13,6 @@ generates:
         Bytes: string
         BigDecimal: string
   src/subgraph/generated/balancer-subgraph-schema.graphql:
-    schema: http://167.114.211.113:8000/subgraphs/name/balancer-labs/balancer-fuji-v2
+    schema: https://node-us.yotei.finance/subgraphs/name/balancer-labs/balancer-avalanche-v2
     plugins:
       - schema-ast

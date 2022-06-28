@@ -861,14 +861,14 @@ const BALANCER_NETWORK_CONFIG = {
         vault: '0xF20D313685665bf745B720FE81b927fAFcfB18A2',
         weth: '0xbAD9016aa18Cf22d08aefd3B86c0D36E8C222B83',
         multicall: '0xC471AFa18cD037a9bb032bE72651Fe3Eaa466eBA',
-        subgraphUrl: 'http://167.114.211.113:8000/subgraphs/name/balancer-labs/balancer-fuji-v2',
+        subgraphUrl: 'https://api.thegraph.com/subgraphs/name/leedewyze/balancer-fuji-v2',
     },
     [exports.Network.AVALANCHE]: {
         chainId: exports.Network.AVALANCHE,
-        vault: 'todo vault adress here',
+        vault: '0xE6203163FD8955137837DbD447CD9c2072fA467F',
         weth: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
-        multicall: 'todo multicall address here',
-        subgraphUrl: 'https://api.thegraph.com/subgraphs/name/leedewyze/balancer-avalanche-v2',
+        multicall: '0x0d961d4108E946177a532803485325A36F84ACb3',
+        subgraphUrl: 'https://node-us.yotei.finance/subgraphs/name/balancer-labs/balancer-avalanche-v2',
     }
 };
 

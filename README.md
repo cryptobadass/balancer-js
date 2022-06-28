@@ -32,11 +32,11 @@ Add Avalanche Mainnet config
 ```config=
 [Network.AVALANCHE]: {
         chainId: Network.AVALANCHE, //43114
-        vault: 'todo vault adress here',
+        vault: '0xE6203163FD8955137837DbD447CD9c2072fA467F',
         weth: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
-        multicall: 'todo multicall address here',
+        multicall: '0x0d961d4108E946177a532803485325A36F84ACb3',
         subgraphUrl:
-            'subgraph-url-here',
+            'https://node-us.yotei.finance/subgraphs/name/balancer-labs/balancer-avalanche-v2',
     }
 ```
 
