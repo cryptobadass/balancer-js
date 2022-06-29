@@ -7,6 +7,13 @@ export class CoingeckoTokenPriceService implements TokenPriceService {
     public async getNativeAssetPriceInToken(
         tokenAddress: string
     ): Promise<string> {
+        if (this.chainId == 43114) {
+            // avalanche mainnet
+            const wavaxPriceUSD = await this.getTokenPriceInNativeAsset("0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7");
+            const tokenPriceUSD = await this.getTokenPriceInNativeAsset(tokenAddress);
+            const avaxPerToken = parseFloat(tokenPriceUSD) / parseFloat(wavaxPriceUSD);
+            return `${1 / avaxPerToken}`;
+        }
         const ethPerToken = await this.getTokenPriceInNativeAsset(tokenAddress);
 
         // We get the price of token in terms of ETH
@@ -70,7 +77,7 @@ export class CoingeckoTokenPriceService implements TokenPriceService {
             case 43113:
                 return "eth";
             case 43114:
-                return "eth"; // todo
+                return "usd"; // todo
         }
 
         return '';
