@@ -7945,7 +7945,7 @@
                 case 43113:
                     return "ethereum";
                 case 43114:
-                    return "avalanche"; // todo
+                    return "avalanche";
             }
             return '2';
         }
@@ -7962,7 +7962,7 @@
                 case 43113:
                     return "eth";
                 case 43114:
-                    return "avax"; // todo
+                    return "eth"; // todo
             }
             return '';
         }
